@@ -23,12 +23,10 @@ export const defaultInitState: CounterState = {
   light: false,
 }
 
-export const initCounterState = (): CounterState => {
-  return {
-    count: 0,
-    light: false,
-  }
-}
+export const initCounterState = (): CounterState => ({
+  count: 0,
+  light: false,
+});
 
 export const createCounterStore = (
   initState: CounterState = defaultInitState,
